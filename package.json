@@ -1,0 +1,45 @@
+{
+  "name": "@amitport/koangular-users",
+  "version": "0.0.0",
+  "scripts": {
+    "prepublish": "rmdir lib /S /Q & babel src --out-dir lib"
+  },
+  "author": {
+    "name": "Amit Portnoy",
+    "email": "amit.portnoy@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koangular/users.git"
+  },
+  "files": [
+    "lib", "views"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-3": "^6.5.0"
+  },
+  "dependencies": {
+    "base64-url": "^1.2.1",
+    "bluebird": "^3.3.1",
+    "bs58": "^3.0.0",
+    "jwt-simple": "^0.4.1",
+    "moment": "^2.11.2",
+    "mongoose-beautiful-unique-validation": "^2.0.3",
+    "mongoose-validators": "^0.1.0",
+    "node-cache": "^3.1.0",
+    "request": "^2.69.0",
+    "sparkpost": "^1.1.0",
+    "validator": "^4.8.0"
+  },
+  "peerDependencies": {
+    "@amitport/koangular": "0.0.0",
+    "config": "^1.19.0",
+    "koa": "^2.0.0-alpha.3",
+    "koa-router": "^7.0.1",
+    "co-views": "^2.1.0",
+    "mongoose": "^4.4.4"
+  },
+  "license": "AGPL-3.0"
+}
